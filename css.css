@@ -1,0 +1,41 @@
+@font-face{ 
+    font-family: typo;
+    src: url("/typo_round/Typo_Round_Light_Demo.otf") format('opentype');
+}
+
+html { 
+    /*background: url(image/fundo.jpg) fixed no-repeat repeat;*/ 
+    background-size: cover;
+}
+
+body { 
+    color: white; 
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.061);
+    gap: 30px;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    border-style: dotted;
+    border-radius: 30px;
+
+    color:white;
+}
+a{
+    color: rgb(54, 54, 54);
+    text-decoration: none;
+    font-family: Typo;
+    font-size: 15px;
+}
