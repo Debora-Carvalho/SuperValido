@@ -1,6 +1,6 @@
 @font-face{ 
     font-family: typo;
-    src: url("/typo_round/Typo_Round_Light_Demo.otf") format('opentype');
+    src: url("fonte/typo_round/Typo_Round_Light_Demo.otf") format('opentype');
 }
 
 html { 
