@@ -105,7 +105,7 @@ footer p {
     font-weight: 400;
 }
 
-.formulario-cadastro {
+.formulario-cadastro, .formulario-login {
     width: 60%;
     margin: 2rem 0; 
     padding: 2rem; 
@@ -157,7 +157,7 @@ footer p {
 }
 
 .info-termoscondicoes {
-    font-size: 12px;
+    font-size: 1rem;
     color: #3F3E3E;
 }
 
@@ -181,4 +181,20 @@ footer p {
 .botao-cadastro:hover {
     background-color: #7edb61;
     color: #FFFFFF;
+}
+
+/* ESTILIZAÇÃO DA PAGINA DE LOGIN */
+.formulario-login p, .formulario-login a {
+    font-size: 1rem;
+    color: #3F3E3E; 
+    text-decoration: none;
+}
+
+.formulario-login a {
+    font-weight: bold;
+    color:#37A416;
+}
+
+.formulario-login a:hover {
+    color: #f8b842;
 }
