@@ -228,6 +228,7 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilização do Banner de promoção de destaque do dia */
 .banner-promocao-destaque {
     margin: 2rem;
 }
