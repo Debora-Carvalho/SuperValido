@@ -206,10 +206,6 @@ main {
     max-width: 150px; 
     text-align: center;
     padding: 1rem;
-    /* border: 1px solid #ddd; /* Borda leve ao redor de cada categoria */
-    /* border-radius: 10px; Borda arredondada */
-    /* background-color: #f9f9f9; Fundo leve */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Sombra suave */ 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -230,6 +226,16 @@ main {
     background-color: #f9f9f9;
     border-radius: 10px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner-promocao-destaque {
+    margin: 2rem;
+}
+
+.banner-promocao-destaque img {
+    width: 100%;
+    border-radius: 10px; 
+    display: block; 
 }
 
 
