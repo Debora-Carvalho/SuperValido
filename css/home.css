@@ -246,6 +246,73 @@ main {
     display: block; 
 }
 
+/* ESTILIZAÇÃO CONTAINER DE CARDS DE PRODUTO */
+.container-card-produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 18%; /* Ajuste conforme necessário para 5 produtos por linha */
+    margin: 1rem 0.5rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.card-produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.botao-favoritar {
+    position: relative;
+    top: -45px;
+    left: calc(100% - 40px);
+    background-color: #464444;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.botao-favoritar i {
+    color: rgb(85, 84, 84);
+    font-size: 1rem;
+}
+
+.nome-produto {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.data-validade-produto {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.preco-produto {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 
 
 
