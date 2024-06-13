@@ -1,7 +1,13 @@
+@font-face{ 
+    font-family: typo;
+    src: url("fonte/typo_round/Typo_Round_Light_Demo.otf") format('opentype');
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    font-family: Typo, sans-serif;
 }
 
 body {
@@ -36,7 +42,7 @@ nav {
 
 .menu li a {
     margin: 0 6.5rem; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Typo, sans-serif;
     color:#3F3E3E;
     font-weight: bolder;
     text-transform: uppercase;
@@ -63,6 +69,7 @@ footer {
     background-color: #f8f8f8;
     padding: 2rem 1rem;
     border-top: 1px solid #ddd;
+    font-family: Typo, sans-serif;
 }
 
 .footer-container {
@@ -103,6 +110,7 @@ footer {
 .footer-column h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: #000;
 }
 
 .footer-column ul {
@@ -215,9 +223,8 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.categoria-produto p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+.categoria-produto h3 {
+    color: #3F3E3E;
     font-weight: bold;
 }
 
