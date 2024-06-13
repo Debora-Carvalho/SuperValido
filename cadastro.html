@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se em Super Válido</title>
+    <meta name="description" content="Aqui você encontra ofertas imperdíveis e ajuda o planeta!">
+    <link rel="shortcut icon" type="imagex/png" href="image/icon2.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <style>
+        @import url(css/cadastro.css);
+    </style>
+</head>
+<body>
+    <main>
+        <div class="logo-titulo-cadastro">
+            <div class="logo">
+                <img src="image/logoSVbranca.png" alt="Logo do Super Válido" width="360vw" height="90vh">
+            </div>
+            <h2>Faça seu cadastro e aproveite todas as vantagens de fazer parte do Super Válido</h2>
+        </div>
+        <div class="formulario-cadastro">
+            <div class="cadastro-card">
+                <form action="" method="post">
+                    <div class="card-cabecalho">
+                        <h2 class="card-cadastro-titulo">Cadastre-se em Super Válido</h2>
+                    </div>
+                    <div class="campo-cadastro">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                    </div>
+                    <div class="campo-cadastro">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" id="telefone" name="telefone" placeholder="Ex: 11987654321" required>
+                        <label for="whats">É Whatsapp?</label>
+                        <input type="radio" id="whats-sim" name="whats" value="sim" checked>Sim
+                        <input type="radio" id="whats-nao" name="whats" value="nao">Não
+                    </div>
+                    <div class="campo-cadastro">
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div class="campo-cadastro">
+                        <label for="cpf">CPF:</label>
+                        <input type="number" id="cpf" name="cpf" placeholder="Ex: 12345678910" required>
+                    </div>
+                    <div class="campo-cadastro">
+                        <label for="sexo">Sexo:</label>
+                        <input type="radio" id="sexo-masculino" name="sexo" value="masculino" checked>Masculino
+                        <input type="radio" id="sexo-feminino" name="sexo" value="feminino">Feminino
+                        <input type="radio" id="sexo-outro" name="sexo" value="outro">Indefinido
+                    </div>
+                    <div class="campo-cadastro">
+                        <label for="senha">Crie uma senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Crie sua senha" required>
+                        <label for="confirma-senha">Confirme sua senha:</label>
+                        <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Repita a senha" required>
+                    </div>
+                    <div class="campo-cadastro">
+                        <label for="aceitar-termos">Aceitar Termos e Condições:</label>
+                        <input type="checkbox" id="aceitar-termos" name="aceitar-termos" required>
+                        <p class="info-termoscondicoes">Ao aceitar nossos termos e condições, você permite o envio de cupons e promoções via email e whatsapp.</p>
+                    </div>
+                    <button class="botao-cadastro" type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column large">
+                <img src="image/logoSupervalido.png" alt="Logo do Super Válido" class="footer-logo" width="360vw" height="90vh">
+                <br>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <br>
+                <p>&copy; SUPER VALIDO, 2024. ALL RIGHTS RESERVED.</p>
+                <p>Desenvolvido com muito ♡ por DNA</p>
+            </div>
+            <div class="footer-column">
+                <h3>NAVEGUE PELO SITE</h3>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Meus descontos</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                </ul>
+                <br><br>
+                <h3>AJUDA</h3>
+                <ul>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>PRODUTOS</h3>
+                <ul>
+                    <li><a href="#">Bebidas</a></li>
+                    <li><a href="#">Doces</a></li>
+                    <li><a href="#">Padaria</a></li>
+                    <li><a href="#">Laticínio</a></li>
+                    <li><a href="#">Massas</a></li>
+                    <li><a href="#">Mercearia</a></li>
+                    <li><a href="#">Bebê</a></li>
+                    <li><a href="#">Higiene</a></li>
+                    <li><a href="#">Beleza e perfumaria</a></li>
+                    <li><a href="#">Limpeza</a></li>
+                    <li><a href="#">Hortifruti</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
