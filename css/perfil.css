@@ -26,7 +26,7 @@ body {
     transition: background-color 0.5s ease;
 } 
 
- main {
+main{
     width: 100%;
     display: flex;
     flex-direction: column; 
@@ -39,7 +39,7 @@ html {
     background-size: cover;
 }
 
- .container{
+.container{
     background-color: rgba(0, 0, 0, 0.061);
     gap: 30px;
     display: flex;
@@ -287,4 +287,13 @@ footer p {
 
 .formulario-login a:hover {
     color: #f8b842;
+}
+
+.sectionone{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center; */
+    padding: 2rem;
+    background-color: #f8b842;
 }

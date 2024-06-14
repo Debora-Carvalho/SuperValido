@@ -8,4 +8,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector('.menu-perfil').classList.toggle('mostrar');
     });
 });
-

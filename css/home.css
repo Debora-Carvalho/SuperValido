@@ -40,7 +40,7 @@ nav {
     display: flex; 
 }
 
-.menu li a {
+.menu li a{
     margin: 0 6.5rem; 
     font-family: Typo, sans-serif;
     color:#3F3E3E;
@@ -399,7 +399,12 @@ main {
     transform: translateY(5px); 
 }
 
-
+.perfil-a{
+    font-family: Typo, sans-serif;
+    color:#3F3E3E;
+    font-weight: bolder;
+    text-decoration: none;
+}
 
 
 
