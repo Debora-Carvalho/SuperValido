@@ -252,6 +252,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 1rem;
+    color: #3F3E3E;
 }
 
 .card-produto {
@@ -277,12 +278,12 @@ main {
 .botao-favoritar {
     position: relative;
     top: -45px;
-    left: calc(100% - 40px);
-    background-color: #464444;
+    left: calc(100% - 50px);
+    background-color: #ac9e9e;
     border: none;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,9 +291,8 @@ main {
     cursor: pointer;
 }
 
-.botao-favoritar i {
-    color: rgb(85, 84, 84);
-    font-size: 1rem;
+.botao-favoritar img {
+    width: 60%;
 }
 
 .nome-produto {
@@ -302,15 +302,42 @@ main {
 }
 
 .data-validade-produto {
-    color: red;
+    color: rgb(252, 31, 31);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
 .preco-produto {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
+
+.botao-carregar-mais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f8b842;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+}
+
+.botao-carregar-mais i {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease; 
+}
+
+.botao-carregar-mais:hover i {
+    transform: translateY(5px); 
+}
+
 
 
 
