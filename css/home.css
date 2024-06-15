@@ -275,7 +275,7 @@ main {
     width: calc(100% / 5 - 1rem); 
     max-width: 150px; 
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 

@@ -7,6 +7,8 @@
     <meta name="description" content="Aqui você encontra ofertas imperdíveis e ajuda o planeta!">
     <link rel="shortcut icon" type="imagex/png" href="image/icon2.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <style>
         @import url(css/home.css);
     </style>
@@ -55,7 +57,7 @@
                 <span>Av. Águia de Haia, 200 - São Paulo, SP</span>
             </div>
         </div>
-        <div class="container-categoria-produto">
+        <div class="container-categoria-produto responsive">
             <div class="categoria-produto">
                 <img src="image/icon-bebidas.png" alt="Ícone da categoria Bebidas">
                 <h3>Bebidas</h3>
@@ -257,5 +259,34 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+            $(document).ready(function(){
+        $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 7,
+        slidesToScroll: 7,
+        responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+        ]
+        });
+    });
+        </script>
 </body>
 </html>
