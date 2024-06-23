@@ -1,38 +1,128 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face{ 
+    font-family: typo;
+    src: url("fonte/typo_round/Typo_Round_Light_Demo.otf") format('opentype');
 }
 
 
-/* body {
-    font-family: Arial, sans-serif;
-    align-items: center;
-    color: #777
-} */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Typo, sans-serif;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #777
+	display: flex;
+	flex-direction: column; 
+	margin: 0;
 }
 
-main {
-    width: 100%;
+/* cabeçalho fixo */
+header {
+    position: fixed; 
+    width: 100%; 
+    height: 12%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1001; 
+    margin: 0 0 0.5rem;
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem; 
+}
+
+.menu {
+    list-style-type: none; 
+    display: flex; 
+}
+
+.menu li a{
+    margin: 0 6.5rem; 
+    font-family: Typo, sans-serif;
+    color:#3F3E3E;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #f8b842; 
+}
+
+.botao-perfil {
+    position: relative;
+}
+
+.botao-perfil-icone i {
+    font-size: 30px;
+    color: #3F3E3E;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.botao-perfil-icone i:hover {
+    color: #f8b842;
+}
+
+/* Menu de Perfil do usuário */
+.menu-perfil {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    margin-top: 0.5rem;
+    z-index: 1000;
+    color: #1d1d1d;
+}
+
+.menu-perfil.mostrar {
+    display: block;
+}
+
+.menu-perfil .perfil-header {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-perfil .perfil-header .icone-perfil {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    padding: 2px;
+}
+
+.menu-perfil ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-perfil ul li {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-perfil ul li:hover {
     background-color: #f8b842;
 }
 
-.corpo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: white
+.menu-perfil ul li i {
+    margin-right: 0.5rem;
 }
 
 /* ESTILIZAÇÃO FOOTER */
@@ -41,6 +131,7 @@ footer {
     background-color: #f8f8f8;
     padding: 2rem 1rem;
     border-top: 1px solid #ddd;
+    font-family: Typo, sans-serif;
 }
 
 .footer-container {
@@ -81,6 +172,7 @@ footer {
 .footer-column h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: #000;
 }
 
 .footer-column ul {
@@ -107,89 +199,52 @@ footer p {
     margin-top: 1rem;
 }
 
-.logo-titulo-cadastro {
-    text-align: center;
-    margin-top: 2rem;
+/* Estlização da Section Sobre */
+.sobre-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 12vh 2rem 2rem 2rem; 
+    margin-top: 4vh; 
+    background-color: #f9f9f9;
 }
 
-.logo-titulo-cadastro .logo {
-    margin-bottom: 1rem;
+.sobre-inicio-text, .sobre-inicio-image {
+    flex: 1;
+    margin: 0 1rem;
 }
 
-.logo-titulo-cadastro h2 {
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-weight: 400;
+.sobre-inicio-text h1 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
 
-.formulario-cadastro, .formulario-login {
-    width: 60%;
-    margin: 2rem 0; 
-    padding: 2rem; 
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.sobre-inicio-text p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
 }
 
-.cadastro-card {
+.sobre-inicio-image img {
     width: 100%;
-}
-
-.card-cabecalho {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.card-cadastro-titulo {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #3F3E3E;
-}
-
-.campo-cadastro {
-    margin-bottom: 20px;
-}
-
-.campo-cadastro label {
-    display: block;
-    margin-bottom: 5px;
-    color: #3F3E3E;
-}
-
-.campo-cadastro input[type="text"],
-.campo-cadastro input[type="email"],
-.campo-cadastro input[type="number"],
-.campo-cadastro input[type="password"],
-.campo-cadastro input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.campo-cadastro input[type="checkbox"],
-.campo-cadastro input[type="radio"] {
-    margin-right: 5px;
-}
-
-.info-termoscondicoes {
-    font-size: 1rem;
-    color: #3F3E3E;
+    height: auto;
 }
 
 .botao-cadastro {
     background-color: #37A416;
     border: none;
     color: #FFFFFF;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     font-family: Inter, sans-serif;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 20px;
     transition: background-color 0.5s ease;
@@ -200,27 +255,72 @@ footer p {
     color: #FFFFFF;
 }
 
-/* ESTILIZAÇÃO DA PAGINA DE LOGIN */
-.formulario-login p, .formulario-login a {
-    font-size: 1rem;
-    color: #3F3E3E; 
-    text-decoration: none;
-}
-
-.formulario-login a {
-    font-weight: bold;
-    color:#37A416;
-}
-
-.formulario-login a:hover {
-    color: #f8b842;
-}
-
-.sectionone{
-    width: 100%;
+/* Estilização da section sobre-vantagem */
+.sobre-vantagem {
     display: flex;
-    flex-direction: column; 
-    /* align-items: center; */
-    padding: 2rem;
-    background-color: #f8b842;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #f3f3f3;
+    margin-top: 2rem;
 }
+
+.sobre-vantagem h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.vantagens-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sobre-vantagem-cliente, .sobre-vantagem-parceiro {
+    flex: 1;
+    margin: 0 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-cliente-image img, .sobre-parceiro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.sobre-cliente-text, .sobre-parceiro-text {
+    margin-top: 1rem;
+}
+
+.sobre-cliente-text h3, .sobre-parceiro-text h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.sobre-cliente-text ul, .sobre-parceiro-text ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.sobre-cliente-text ul li, .sobre-parceiro-text ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.sobre-vantagem p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 2rem 0;
+}
+
+
