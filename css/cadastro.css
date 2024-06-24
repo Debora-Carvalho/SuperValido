@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,89 +7,139 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    align-items: center;
-}
-
-main {
-    width: 100%;
+    font-family: 'Quicksand', sans-serif;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    height: 100vh;
+    margin: 0;
     background-color: #f8b842;
 }
 
-/* ESTILIZAÇÃO FOOTER */
+/* ESTILIZAÇÃO DA PAGINA DE LOGIN */
 
-footer {
-    background-color: #f8f8f8;
-    padding: 2rem 1rem;
-    border-top: 1px solid #ddd;
-}
-
-.footer-container {
+main.login-page {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
 }
 
-.footer-column {
+.login-image {
     flex: 1;
-    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
 }
 
-.footer-column.large {
-    flex: 2;
-    margin-left: 3rem;
-    margin-top: 2rem;
-}
-
-.footer-logo {
+.login-image img {
     max-width: 100%;
     height: auto;
+}
+
+.container-formulario-login {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.formulario-login {
+    width: 100%;
+    max-width: 800px;
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-cabecalho {
+    text-align: center;
     margin-bottom: 1rem;
 }
 
-.social-icons a {
-    margin-right: 1rem;
-    color: #555;
-    text-decoration: none;
+.card-cadastro-titulo {
     font-size: 1.5rem;
+    color: #333;
 }
 
-.social-icons a:hover {
-    color: #000;
+.campo-cadastro {
+    margin-bottom: 1.5rem;
+    position: relative;
 }
 
-.footer-column h3 {
-    font-size: 1.2rem;
+.campo-cadastro label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
     margin-bottom: 0.5rem;
 }
 
-.footer-column ul {
-    list-style-type: none;
-    padding-left: 0;
+.campo-cadastro i {
+    margin-right: 0.5rem;
 }
 
-.footer-column ul li {
-    margin-bottom: 0.5rem;
+.campo-cadastro input {
+    width: 100%;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.footer-column ul li a {
+.campo-cadastro input::placeholder {
+    color: #aaa;
+}
+
+.botao-cadastro {
+    background-color: #37A416;
+    border: none;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    text-align: center;
     text-decoration: none;
-    color: #555;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    width: 100%;
 }
 
-.footer-column ul li a:hover {
-    color: #000;
+.botao-cadastro:hover {
+    background-color: #7edb61;
+    color: #FFFFFF;
 }
 
-footer p {
-    color: #777;
-    font-size: 0.9rem;
-    margin-top: 1rem;
+.formulario-login p {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.formulario-login a {
+    color: #37A416;
+    text-decoration: none;
+}
+
+.formulario-login a:hover {
+    text-decoration: underline;
 }
 
 .logo-titulo-cadastro {
@@ -161,40 +213,5 @@ footer p {
     color: #3F3E3E;
 }
 
-.botao-cadastro {
-    background-color: #37A416;
-    border: none;
-    color: #FFFFFF;
-    padding: 15px 32px;
-    font-family: Inter, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: background-color 0.5s ease;
-}
 
-.botao-cadastro:hover {
-    background-color: #7edb61;
-    color: #FFFFFF;
-}
 
-/* ESTILIZAÇÃO DA PAGINA DE LOGIN */
-.formulario-login p, .formulario-login a {
-    font-size: 1rem;
-    color: #3F3E3E; 
-    text-decoration: none;
-}
-
-.formulario-login a {
-    font-weight: bold;
-    color:#37A416;
-}
-
-.formulario-login a:hover {
-    color: #f8b842;
-}

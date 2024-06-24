@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt - BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,83 +12,36 @@
     </style>
 </head>
 <body>
-    <main>
-        <div class="logo-titulo-cadastro">
+    <main class="login-page">
+        <div class="login-image">
+            <img src="image/img-pageLogin.svg" alt="Garota com sacolas de compra">
+        </div>
+        <div class="container-formulario-login">
             <div class="logo">
                 <a href="index.html"><img src="image/logoSVbranca.png" alt="Logo do Super Válido" width="360vw" height="90vh"></a>
             </div>
-            <h2>Bem-vindo(a) de volta</h2>
-        </div>
-        <div class="formulario-login">
-            <div class="cadastro-card">
-                <form method="post">
-                    <div class="card-cabecalho">
-                        <h2 class="card-cadastro-titulo">Login</h2>
-                    </div>
-                    <div class="campo-cadastro">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
-                    </div>
-                    <div class="campo-cadastro">
-                        <label for="senha">Sua senha:</label>
-                        <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required>
-                    </div>
-                    <button class="botao-cadastro" type="submit">Entrar</button>
-                    <br><br>
-                    <p>Ainda não tem conta? <a href="cadastro.html">Crie uma conta</a></p>
-                </form>
+            <div class="formulario-login">
+                <div class="cadastro-card">
+                    <form method="post">
+                        <div class="card-cabecalho">
+                            <h2 class="card-cadastro-titulo">Login</h2>
+                        </div>
+                        <div class="campo-cadastro">
+                            <label for="email"><i class="fas fa-envelope"></i> E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
+                        </div>
+                        <div class="campo-cadastro">
+                            <label for="senha"><i class="fas fa-lock"></i> Sua senha:</label>
+                            <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required>
+                        </div>
+                        <button class="botao-cadastro" type="submit">Entrar</button>
+                        <br><br>
+                        <p>Ainda não tem conta? <a href="cadastro.html">Crie uma conta</a></p>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column large">
-                <a href="index.html"><img src="image/logoSupervalido.png" alt="Logo do Super Válido" class="footer-logo" width="360vw" height="90vh"></a>
-                <br>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <br>
-                <p>&copy; SUPER VÁLIDO, 2024. ALL RIGHTS RESERVED.</p>
-                <p>Desenvolvido com muito ♡ por DNA</p>
-            </div>
-            <div class="footer-column">
-                <h3>NAVEGUE PELO SITE</h3>
-                <ul>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="ofertas.html">Ofertas</a></li>
-                    <li><a href="login.html">Meus descontos</a></li>
-                    <li><a href="login.html">Favoritos</a></li>
-                    <li><a href="parceiros.html">Parceiros</a></li>
-                </ul>
-                <br><br>
-                <h3>AJUDA</h3>
-                <ul>
-                    <li><a href="ajuda.html">Dúvidas frequentes</a></li>
-                    <li><a href="ajuda.html">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>PRODUTOS</h3>
-                <ul>
-                    <li><a href="#">Bebidas</a></li>
-                    <li><a href="#">Doces</a></li>
-                    <li><a href="#">Padaria</a></li>
-                    <li><a href="#">Laticínio</a></li>
-                    <li><a href="#">Massas</a></li>
-                    <li><a href="#">Mercearia</a></li>
-                    <li><a href="#">Bebê</a></li>
-                    <li><a href="#">Higiene</a></li>
-                    <li><a href="#">Beleza e perfumaria</a></li>
-                    <li><a href="#">Limpeza</a></li>
-                    <li><a href="#">Hortifruti</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
     <script src="js/login.js"></script>
 </body>
 </html>
