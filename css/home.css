@@ -260,7 +260,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 2rem 20rem;
     gap: 1.5rem;
     margin: 2rem 1rem; 
 }
@@ -404,6 +404,9 @@ main {
     text-decoration: none;
 }
 
-
+.superoferta{
+    color: red;
+    text-decoration: dotted;
+}
 
 
