@@ -28,7 +28,7 @@
 </p>
 
 <h2>👇🏼 Acesse o site através do link:</h2>
-<a href="https://debora-carvalho.github.io/Rosycoffee/">Super Válido</a>
+<a href="https://anahimamani.github.io/SuperValido/">Super Válido</a>
 
 <h2>👩🏾‍💻 Desenvolvedoras</h2>
 <p>Débora Carvalho, Natália de Brito e Anahi Mamani.</p><br>
